@@ -1,8 +1,6 @@
 package com.vilha.bookstoremanager.controller;
 
-import com.vilha.bookstoremanager.controller.dto.MessageResponseDTO;
-import com.vilha.bookstoremanager.entity.Book;
-import com.vilha.bookstoremanager.repository.BookRepository;
+import com.vilha.bookstoremanager.dto.MessageResponseDTO;
 import com.vilha.bookstoremanager.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +20,7 @@ public class BookController {
     }
 
     @PostMapping
-    public MessageResponseDTO create(@RequestBody Book book) {
-        return bookService.create(book);
+    public MessageResponseDTO create(@RequestBody @Valid BookDTO bookDTO) {
+        return bookService.create(bookDTO);
     }
 }

@@ -1,13 +1,10 @@
-package com.vilha.bookstoremanager.controller.dto;
+package com.vilha.bookstoremanager.dto;
 
 import com.sun.istack.NotNull;
-import com.vilha.bookstoremanager.entity.Author;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Data
 @Builder

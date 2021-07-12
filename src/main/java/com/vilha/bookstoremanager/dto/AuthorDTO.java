@@ -1,4 +1,4 @@
-package com.vilha.bookstoremanager.controller.dto;
+package com.vilha.bookstoremanager.dto;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
