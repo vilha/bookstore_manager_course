@@ -6,6 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -15,7 +20,7 @@ public class BookDTO {
     private Long id;
 
     @NotBlank
-    @Size(Max = 200)
+    @Size(max = 200)
     private String name;
 
     @NotNull
@@ -30,7 +35,7 @@ public class BookDTO {
     private String isbn;
 
     @NotBlank
-    @Size(Max = 200)
+    @Size(max = 200)
     private String publisherName;
 
     @Valid

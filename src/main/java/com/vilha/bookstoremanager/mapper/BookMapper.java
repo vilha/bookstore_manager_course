@@ -3,6 +3,7 @@ package com.vilha.bookstoremanager.mapper;
 import com.vilha.bookstoremanager.dto.BookDTO;
 import com.vilha.bookstoremanager.entity.Book;
 import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
 @Mapper
 public interface BookMapper {

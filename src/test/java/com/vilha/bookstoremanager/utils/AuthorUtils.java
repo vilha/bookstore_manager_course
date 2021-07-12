@@ -1,6 +1,7 @@
 package com.vilha.bookstoremanager.utils;
 
 
+import com.github.javafaker.Faker;
 import com.vilha.bookstoremanager.dto.AuthorDTO;
 import com.vilha.bookstoremanager.entity.Author;
 
@@ -24,4 +25,11 @@ public class AuthorUtils {
                 .build();
     }
 
+    public static Author createFakeAuthorFrom(AuthorDTO authorDTO) {
+        return Author.builder()
+                .id(authorDTO.getId())
+                .name(authorDTO.getName())
+                .age(authorDTO.getAge())
+                .build();
+    }
 }
